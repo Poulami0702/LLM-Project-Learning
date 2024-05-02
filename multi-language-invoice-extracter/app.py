@@ -56,6 +56,7 @@ input_prompt = """
 
 
 if submit :
+    # onclick submit button
     image_data= input_image_setup(uploaded_file)
     response=get_gemini_response(input_prompt,image_data, input)
     st.subheader("The response is")
